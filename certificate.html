@@ -9,7 +9,7 @@
         /* Styles for the certificate verification page */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to left, #ea00ff,#6600ff ); /* Gradient background */
+            background: linear-gradient(270deg, #0a0564 30%, #670ba4 70%);/* Gradient background */
             margin: 0;
             padding: 0;
             display: flex;
@@ -20,7 +20,7 @@
         }
 
         .verification-container {
-            background-color: #fff;
+            background-color: #000; /* Change background color to black */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -31,6 +31,7 @@
             display: block;
             margin-bottom: 10px;
             font-weight: bold;
+            color: white; /* Change label text color to white */
         }
 
         input[type="text"] {
@@ -41,23 +42,27 @@
             border: none; /* Remove border */
             outline: none; /* Remove outline */
             background: transparent; /* Make background transparent */
-            border-bottom: 1px solid #000; /* Add an underline */
-            margin-bottom: 20px; /* Add some space below the input */
+            border-bottom: 2px solid white; /* White underline */
+            color: white; /* Change text color to white */
         }
 
         button {
-            background-color: #4caf50;
-            color: #fff;
+            background: linear-gradient(270deg, #08AEEA 0%, #2AF598 100%);
+            color: #ffffff;
             padding: 10px 15px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             display: block;
-            margin: 0 auto; /* Center the button */
+            margin: 20px auto; /* Center the button */
         }
 
         button:hover {
             background-color: #45a049;
+        }
+
+        #verificationResult {
+            color: white; /* Change result text color to white */
         }
     </style>
 </head>
@@ -79,9 +84,9 @@
 
             // Example: Check if the certificate number is valid
             if (certificateNumber === '123456') {
-                resultMessage.innerHTML = 'Certificate is valid!';
+                resultMessage.innerHTML = 'We are Under Maintains!';
             } else {
-                resultMessage.innerHTML = 'Invalid certificate number. Please try again.';
+                resultMessage.innerHTML = 'We are Under Maintains!';
             }
         }
     </script>
